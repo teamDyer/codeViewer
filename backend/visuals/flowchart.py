@@ -11,8 +11,6 @@ Files will be created with this structure:
     4. Customize
 """
 
-
-
 class Node():
     """
     All avaiable node types.

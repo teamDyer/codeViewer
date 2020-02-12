@@ -7,6 +7,8 @@ from pprint import pprint
 import engine.analyze
 import engine.deconstruct
 
+import visuals.tree
+
 ##get the tree
 example = 'examples/0001-if/main.py'
 with open(example, 'r') as file:
@@ -46,5 +48,11 @@ for node in deconstructor.connections:
     text.append(node)
 
 ##debug
-for line in text:
-    print(line)
+#for line in text:
+#    print(line)
+
+#########################################
+
+nodes = visuals.tree.nodes
+nodes.initialize()
+print(nodes.master.keys())
